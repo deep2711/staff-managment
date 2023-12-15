@@ -14,13 +14,13 @@ public class ProjectServiceImpl implements ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
-    public List<Project> getAllProjects() {
+    /*public List<Project> getAllProjects() {
         return projectRepository.findAll();
     }
 
     public Project getProjectById(Long id) {
         return projectRepository.findById(id).orElse(null);
-    }
+    }*/
 
     public Project saveProject(Project project) {
         return projectRepository.save(project);
@@ -31,7 +31,6 @@ public class ProjectServiceImpl implements ProjectService {
                 .filter(project -> project.getEmployees().size() > 1)
                 .collect(Collectors.toList());
     }*/
-
 
 
 }

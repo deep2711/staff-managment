@@ -13,13 +13,13 @@ public class Project {
     private Long id;
     private String projectName;
 
-    /*@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+    @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
     @JoinTable(
             name = "employee_project",
             joinColumns = @JoinColumn(name = "project_id"),
             inverseJoinColumns = @JoinColumn(name = "employee_id")
     )
-    private List<Employee> employees = new LinkedList<>();*/
+    private List<Employee> employees = new LinkedList<>();
 
     public Project() {
     }
@@ -44,13 +44,13 @@ public class Project {
         this.projectName = projectName;
     }
 
-   /* public List<Employee> getEmployees() {
+   public List<Employee> getEmployees() {
         return employees;
     }
 
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
-    }*/
+    }
 
     /*public void addEmployee(Employee employee) {
         this.employees.add(employee);

@@ -14,10 +14,10 @@ public class ProjectController {
     @Autowired
     private ProjectService projectService;
 
-    @GetMapping
+   /* @GetMapping
     public List<Project> getAllProjects() {
         return projectService.getAllProjects();
-    }
+    }*/
 
     /*@GetMapping("/multiple-employees")
     public List<Project> getProjectsAssignedToMultipleEmployees() {
