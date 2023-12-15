@@ -52,13 +52,5 @@ public class Project {
         this.employees = employees;
     }
 
-    /*public void addEmployee(Employee employee) {
-        this.employees.add(employee);
-        employee.getProjects().add(this);
-    }
 
-    public void removeEmployee(Employee employee) {
-        this.employees.remove(employee);
-        employee.getProjects().remove(this);
-    }*/
 }

@@ -14,16 +14,6 @@ public class ProjectController {
     @Autowired
     private ProjectService projectService;
 
-   /* @GetMapping
-    public List<Project> getAllProjects() {
-        return projectService.getAllProjects();
-    }*/
-
-    /*@GetMapping("/multiple-employees")
-    public List<Project> getProjectsAssignedToMultipleEmployees() {
-        return projectService.getProjectsAssignedToMultipleEmployees();
-    }*/
-
     @PostMapping
     public Project createProject(@RequestBody Project project) {
         return projectService.saveProject(project);

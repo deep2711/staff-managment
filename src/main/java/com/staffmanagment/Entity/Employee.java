@@ -14,16 +14,6 @@ public class Employee {
     private int joinYear;
     private float salary;
 
-    /*@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-    @JoinTable(
-            name = "employee_project",
-            joinColumns = @JoinColumn(name = "employee_id"),
-            inverseJoinColumns = @JoinColumn(name = "project_id")
-    )
-    private List<Project> projects = new LinkedList<>();*/
-
-
-
     public Employee() {
 
     }
@@ -33,7 +23,6 @@ public class Employee {
         this.joinYear = joinYear;
         this.salary = salary;
     }
-
 
     public Long getId() {
         return id;
@@ -67,21 +56,4 @@ public class Employee {
         this.salary = salary;
     }
 
-   /* public List<Project> getProjects() {
-        return projects;
-    }
-
-    public void setProjects(List<Project> projects) {
-        this.projects = projects;
-    }*/
-
-    /*public void addProject(Project project) {
-        this.projects.add(project);
-        project.getEmployees().add(this);
-    }
-
-    public void removeProject(Project project) {
-        this.projects.remove(project);
-        project.getEmployees().remove(this);
-    }*/
 }

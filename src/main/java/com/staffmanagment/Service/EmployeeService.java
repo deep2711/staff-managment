@@ -10,8 +10,6 @@ public interface EmployeeService {
     /*public Employee getEmployeeById(Long id);*/
     public List<Employee> getQualifiedEmployees();
     public Employee saveEmployee(Employee employee);
-
-//Extra
     public List<Employee> getQualifiedStaff(int joinYear, float staffSalary);
-//Extra
+
 }
